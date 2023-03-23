@@ -1,0 +1,13 @@
+100.103.2.231
+
+GET http://checkip.amazonaws.com?Z74361368410Q1 HTTP/1.1
+Host: checkip.amazonaws.com
+Cookie: Z74361368410Q1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0 (+https://best-proxies.ru/faq/#from)
+Referer: https://google.com/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 9
+Connection: close
+
+post=true
+

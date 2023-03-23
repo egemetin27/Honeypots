@@ -1,0 +1,204 @@
+{% load static %}
+{% block content %}
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <HTML>
+    <HEAD><TITLE>TL-WR841N</TITLE>
+    <META http-equiv=Pragma content=no-cache>
+    <META http-equiv=Expires content="wed, 26 Feb 1997 08:21:57 GMT">
+    <LINK href="{% static 'dynaform/cc_help.css' %}" rel=stylesheet type="text/css">
+    <LINK href="{% static 'dynaform/cc_help.css' %}" rel=stylesheet>
+    <SCRIPT language="javascript" type="text/javascript">
+    if(window.parent != window)
+    {
+        document.cookie = "Authorization=;path=/";	
+        window.parent.location.href = httpAutErrorArray[2];
+    }
+    </SCRIPT>
+    <style type="text/css">
+    body{
+        font-family:Arial, sans-serief;
+        background-color:#E5E5E5;
+        margin:0px;
+        padding:0px;
+    }
+    .noteDiv{
+        color:gray;
+        font-family:Arial;
+        width:395px;
+        text-align:left;
+        margin:0px auto;
+        font-size:14px;
+    }
+    #note{
+        display:inline-block;
+        vertical-align:top;
+        _display:inline;
+        _zoom:1;
+        width:50px;
+        font-weight:bold;
+    }
+    #tip{
+        display:inline-block;
+        vertical-align:top;
+        _display:inline;
+        _zoom:1;
+        width:340px;
+        font-weight:bold;
+    }
+    div.panelThre{
+        margin-top:10px;
+    }
+    div.picDiv{
+        width:395px;
+        height:276px;
+        background:url("{% static 'js/login/loginbg.png' %}");
+        position:relative;
+    }
+    div.PCBtnDiv{
+        position:relative;
+        margin-top:20px;
+    }
+    img.logoPic{
+        width:100%;
+    }
+    #copyright{
+        -webkit-text-size-adjust:none;
+        font-size:8px;
+        color:#6a6969;
+        font-family:"Verdana";
+        font-weight:normal;
+        margin-top:40px;
+        display:inline-block;
+    }
+    .topLogo{
+        background:url("{% static 'js/login/top_bg.jpg' %}");
+        height:90px;
+    }
+    .style1 {
+        font-family: "Arial";
+        color: #FFFFFF;
+        font-size: 16px;
+        padding-right: 50;
+        text-align: right;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .style2 {
+        font-size: 12px;
+        font-family: "Arial";
+        font-weight: bold;
+        padding-right: 50;
+        text-align: right;
+        white-space: nowrap;
+        color: #FFFFFF;
+    }
+    ul{
+        padding:60px 0px 0px 0px;
+        margin:0px;
+        list-style:none;
+    }
+    ul li{
+        height:34px;
+        width:222px;
+    }
+    li.blank{
+        height:15px;
+    }
+    .column {
+        float: left;
+        height: 1000px;
+    }
+
+    .left {
+        width: 10%;
+    }
+    .right {
+        width: 37%;
+        overflow: scroll;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
+    </style>
+    </head>
+    <body>
+        <div class="topLogo">
+            <table cellpadding=0 cellspacing=0 width="100%">
+                <tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr><td><a href="http://www.tp-link.com" target="blank" ><img src="{% static 'js/login/top1_1.jpg' %}" border="0" style="cursor:pointer"></a></td>
+                    <td width="490" align=right background="{% static 'js/login/top1_2.jpg' %}" style="padding-top:23">
+                        <table>
+                            <tr><td class="style1">300M Wireless N Router</td></tr>
+                            <tr><td class="style2">Model No. TL-WR841N/TL-WR841ND </td></tr>
+                        </table>
+                    </td>
+                </tr>
+                </table></td></tr>
+            <tr><td><IMG height=3 src="{% static 'js/login/top2.jpg' %}" width="100%" align=top border=0></td></tr>
+            </table>
+        </div>
+        <div class="column left" style="background-color:#aaa;">
+        </div>
+        <div class="column middle" style="background-color:#bbb;">
+            <img src="{% static 'js/login/status.png' %}" width="100%">
+        </div>
+        <div class="column right" style="background-color:#ccc;">
+            <H1>Status Help</H1>
+            <P> The <B>Status</B> page displays the Router's current status and configuration. All information is read-only.
+            <P><B>LAN</B> - The following parameters apply to the LAN port of the Router. You can configure them in the <B>Network -> LAN</B> page.
+            <UL>
+            <B>MAC Address</B> - The physical address of the Router, as seen from the LAN.
+            <B>IP Address</B> - The LAN IP address of the Router.
+                <B>Subnet Mask</B> - The subnet mask associated with LAN IP address.
+            </UL>
+            
+            <P><B>Wireless</B> - These are the current settings or information for Wireless. You can configure them in the <B>Wireless -&gt; Wireless Settings</B> page.
+            <UL>
+                  <B>Wireless Radio</B> - Indicates whether the wireless radio feature of the Router is enabled or disabled.
+                <B>Name (SSID)</B> - The SSID of the Router.
+                <B>Mode</B> - The current wireless mode which the Router works on. 
+                <B>Channel Width</B> - The bandwidth of the wireless channel.
+                <B>Channel</B> - The current wireless channel in use. 
+            <!--	<LI><B>Max Tx Rate</B> - The maximum tx rate.</LI>//-->
+                <B>MAC Address</B> - The physical address of the Router, as seen from the WLAN.
+                </UL>
+            <P><B>WAN</B> - The following parameters apply to the WAN ports of the Router. You can configure them in the <strong><B>Network -> WAN</B></strong> page.
+            <UL>
+            <B>MAC Address</B> - The physical address of the WAN port, as seen from
+            the Internet.
+            <B>IP Address</B> - The current WAN (Internet) IP Address. This field will be blank or
+                0.0.0.0 if the IP Address is assigned dynamically and there is no connection to 
+                Internet.
+            <B>Subnet Mask</B> - The subnet mask associated with the WAN IP Address.
+            <B>Default Gateway</B> - The Gateway currently used by the Router is shown here. When you use <b>Dynamic IP</b> as the connection Internet type, the <B>Renew</B> button will be displayed here. Click the <B>Renew</B> button to obtain new IP parameters dynamically
+            from the ISP. And if you have got an IP address <b>Release</b> button will be displayed here. Click the <b>Release</b> button to release the IP address the Router has obtained from the ISP.
+            <B>DNS Server</B> - The DNS (Domain Name System) Server IP addresses currently used by the Router. Multiple DNS IP settings are common. Usually, the first available DNS Server is used.
+            <B>Online Time</B> - The time that you online. When you use <strong>PPPoE</strong> 
+                  as WAN connection type, the online time is displayed here. Click the <strong>Connect</strong>
+                  or <strong>Disconnect</strong> button to connect to or disconnect from Internet.
+            </UL>
+            <P><B>Secondary Connection</B> - Besides PPPoE, if you use an extra connection type to connect to a local area network provided by ISP, then parameters of this secondary connection will be shown in this area.</P>
+            <P><B>Traffic Statistics</B> - The Router's traffic statistics.
+            <UL>
+                <B>Sent (Bytes)</B> - Traffic that counted in bytes has been sent out from the WAN port.
+                <B>Sent (Packets)</B> - Traffic that counted in packets has been sent out from WAN port.
+                <b>Received (Bytes)</b> - Traffic that counted in bytes has been received from the WAN port.
+                 <b>Received (Packets)</b> - Traffic that counted in packets has been received from the WAN port.
+            </UL>
+            <P><B>System Up Time</B> -  The length of the time since the Router was last powered on or reset.
+            <P>Click the <B>Refresh</B> button to get the latest status and settings of the Router.
+        </div>
+      </div>
+    </body>
+    {% endblock %}
+    </html>

@@ -1,0 +1,9 @@
+{% block content %}
+<SCRIPT language="javascript" type="text/javascript">
+    if(window.parent != window)
+    {
+        document.cookie = "Authorization=;path=/";	
+        window.parent.location.href = "http://{{host_ip}}:8000";
+    }
+</SCRIPT>
+{% endblock %}

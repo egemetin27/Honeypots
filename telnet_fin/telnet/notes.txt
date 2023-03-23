@@ -1,0 +1,32 @@
+#commandler
+
+if decorator:
+	var olanı yap
+elif csvde varsa:
+	csvden output
+hiç yoksa:
+	unkown commandi bassın
+
+
+
+#idle time
+csvden izin verilen idle time bilgisini çek ve o süreyi geçerse disconnectle
+
+#attempt count
+csvden maximum izin verilen attempt sayısına bak ve o miktarı geçerse csvde yer alan connection closed messagını ver
+
+
+
+
+
+"connene closed"
+
+message = get_mes_from_csv()
+
+
+
+sudo docker build -t telnet_fin .
+
+sudo docker run -p 10.50.148.80:23:23 telnet_fin
+
+
