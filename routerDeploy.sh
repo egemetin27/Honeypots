@@ -7,12 +7,14 @@
 #sudo apt install screen
 sudo apt update
 sudo apt upgrade
+
+echo "***\nInstalling Docker\n***"
 apt install docker.io
+echo "***\nInstalling tshark\n***"
 sudo apt install tshark
 
-pip install --upgrade pip
+echo "***\nInstalling docker-compose\n***"
 sudo apt install docker-compose
-
 
 
 ### Start routers in screen
