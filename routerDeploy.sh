@@ -4,14 +4,15 @@
 
 ### Install dependencies
 
-#apt install docker.io
 #sudo apt install screen
-pip install --upgrade pip
-sudo pip install docker-compose
-
 sudo apt update
 sudo apt upgrade
+apt install docker.io
 sudo apt install tshark
+
+pip install --upgrade pip
+pip install docker-compose
+
 
 
 
