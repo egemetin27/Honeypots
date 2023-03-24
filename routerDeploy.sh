@@ -11,8 +11,7 @@ apt install docker.io
 sudo apt install tshark
 
 pip install --upgrade pip
-pip install docker-compose
-
+sudo apt install docker-compose
 
 
 
