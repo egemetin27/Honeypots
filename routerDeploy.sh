@@ -1,20 +1,21 @@
 ### Unzip the router folders
-#sudo apt install unzip
-#unzip hp_2103.zip -d hp_router
-
 ### Install dependencies
 
-#sudo apt install screen
-sudo apt update
-sudo apt upgrade
+sudo apt-get update --yes
+sudo apt-get upgrade --yes
 
 echo "***\nInstalling Docker\n***"
-apt install docker.io
+apt-get install --yes docker.io
+
 echo "***\nInstalling tshark\n***"
-sudo apt install tshark
+sudo apt-get install --yes tshark
+
+echo "***\nInstalling screen\n***"
+sudo apt-get install --yes screen
 
 echo "***\nInstalling docker-compose\n***"
-sudo apt install docker-compose
+sudo apt-get install --yes docker-compose
+
 
 
 ### Start routers in screen
