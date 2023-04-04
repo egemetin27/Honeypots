@@ -4,16 +4,17 @@
 sudo apt-get update --yes
 sudo apt-get upgrade --yes
 
-echo "***\nInstalling Docker\n***"
+echo "*** Installing Docker ***"
 apt-get install --yes docker.io
 
-echo "***\nInstalling tshark\n***"
-sudo apt-get install --yes tshark
+echo "*** Installing tshark ***"
+echo "wireshark-common wireshark-common/install-setuid boolean true" | sudo debconf-set-selections
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install tshark
 
-echo "***\nInstalling screen\n***"
+echo "*** Installing screen ***"
 sudo apt-get install --yes screen
 
-echo "***\nInstalling docker-compose\n***"
+echo "*** Installing docker-compose ***"
 sudo apt-get install --yes docker-compose
 
 
