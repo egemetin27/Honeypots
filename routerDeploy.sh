@@ -23,16 +23,22 @@ sudo apt-get install --yes docker-compose
 
 # Start tl-wr840n
 cd tl-wr840n
+sudo kill $(sudo lsof -t -i:80)
+screen -ls w840 | awk '/\./{system("screen -S "$1" -X quit")}'
 screen -d -m -S w840 bash -c "sudo docker-compose up"
 
 # Start tl-wr841n
 cd ../tl-wr841n/
+sudo kill $(sudo lsof -t -i:8080)
+screen -ls w841 | awk '/\./{system("screen -S "$1" -X quit")}'
 screen -d -m -S w841 bash -c "sudo docker-compose up"
 
 cd ../
 
 # Start pcapcron.sh for capturing pcap files
+screen -X -S pcapcron kill
 screen -d -m -S pcapcron bash -c "bash pcapcron.sh"
 
 # Start extract_automizer.sh for to extract pcaps to txt files every 5 minutes
+screen -X -S extract_auto kill
 screen -d -m -S extract_auto bash -c "bash extract_automizer.sh"
