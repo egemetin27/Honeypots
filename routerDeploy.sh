@@ -21,16 +21,27 @@ sudo apt-get install --yes docker-compose
 
 ### Start routers in screen
 
-# Start tl-wr840n
-cd tl-wr840n
+# First, kill port 80 processes
 sudo kill $(sudo lsof -t -i:80)
+sudo kill $(sudo lsof -t -i:8000)
+sudo docker rm -f tl-wr840n_nginx_1
+sudo docker rm -f tl-wr840n_django_1
 screen -ls w840 | awk '/\./{system("screen -XS "$1" quit")}'
+
+# Start tl-wr840n on port 80
+cd tl-wr840n
 screen -d -m -S w840 bash -c "sudo docker-compose up"
 
-# Start tl-wr841n
-cd ../tl-wr841n/
+
+# First, kill port 8080 processes
 sudo kill $(sudo lsof -t -i:8080)
+sudo kill $(sudo lsof -t -i:8001)
+sudo docker rm -f tl-wr841n_nginx_1
+sudo docker rm -f tl-wr841n_django_1
 screen -ls w841 | awk '/\./{system("screen -XS "$1" quit")}'
+
+# Start tl-wr841n on port 8080
+cd ../tl-wr841n/
 screen -d -m -S w841 bash -c "sudo docker-compose up"
 
 cd ../
